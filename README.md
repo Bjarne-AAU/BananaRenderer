@@ -61,5 +61,7 @@ Note that each file can have multiple lines with poses.
 
 ## ToDo
 
-* Euler convention seems to be buggy for pyrr?! So use quaternions from now.
+* Wrong Euler convention for quaternion conversion. So use quaternions for now.
+* Model matrix can only edited from interactive mode. Need option when using cli/file as well.
+* Improve camera control.
 
