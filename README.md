@@ -3,11 +3,12 @@
 Renders a banana (or any other textured CAD model) from a given perspective to an image/depth file with annotated bounding box.
 
 ## Requirements
-python > 3.5  
-numpy  
-pillow  
-pyrr  
-PyQt5 == 5.9.1  
+python > 3.5
+moderngl
+numpy
+pillow
+pyrr
+PyQt5 == 5.9.1
 matplotlib
 
 ## Installation
@@ -24,7 +25,7 @@ Four modes are available for rendering:
 ### Look
 usage: `./banana look`
 
-Use mouse and keyboard to renderer current view to file.  
+Use mouse and keyboard to renderer current view to file.
 Keys:
 * l/L: toggle light source
 * t/T: toggle texture
@@ -33,7 +34,7 @@ Keys:
 * s/S: save current view
 * q/Q/ESC: Quit application
 
-Mouse:  
+Mouse:
 * Left button + move: Rotate (yaw, pitch)
 * Ctrl + Wheel: Rotate (roll)
 * Shift + move: Translate (x,y)

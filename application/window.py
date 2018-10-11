@@ -120,11 +120,11 @@ class Window(QtOpenGL.QGLWidget):
             self.app.toggle_texture()
 
 
-        if self.wnd.wheel != 0:
-            if self.wnd.key_down(227): # Left CTRL
-                self.app.camera_roll(self.wnd.dt * self.wnd.wheel * 30)
-            else:
-                self.app.camera_zoom(self.wnd.dt * self.wnd.wheel * 0.5)
+        # if self.wnd.wheel != 0:
+        #     if self.wnd.key_down(227): # Left CTRL
+        #         self.app.camera_roll(self.wnd.dt * self.wnd.wheel * 30)
+        #     else:
+        #         self.app.camera_zoom(self.wnd.dt * self.wnd.wheel * 0.5)
 
         # if self.wnd.buttons[0]:
         #     distX = self.wnd.mouse[0] - self.wnd.old_mouse[0]

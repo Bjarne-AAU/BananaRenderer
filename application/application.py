@@ -12,7 +12,6 @@ from PyQt5 import QtWidgets
 from .window import Window
 
 
-
 def local(*path):
     return os.path.normpath(os.path.join(os.path.dirname(__file__), *path))
 
@@ -126,7 +125,7 @@ class Application(object):
 
     def set_view_from_euler(self, pos, euler):
         T = Matrix44.from_translation(pos, dtype='f4')
-        R = Matrix44.from_eulers(np.deg2rad(euler), dtype='f4')
+        R = Matrix44.from_eulers(np.deg2rad(euler[::-1]), dtype='f4')
         self._view_mat = T * R
 
     def set_view_from_quaternion(self, pos, q):
